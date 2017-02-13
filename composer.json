@@ -1,0 +1,12 @@
+{
+  "name": "vpg/bash_libs",
+  "description": "Voyage Privé Bash Library",
+  "type": "Library",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "config": {
+    "github-oauth": {
+      "github.com": "0870dca200b5dc65f8db965afbb0ddc493d28105"
+    }
+  }
+}
