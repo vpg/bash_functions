@@ -4,7 +4,22 @@
 # Library to manage specific actions on commands
 #
 
+# According to the 2nd parameter,
+#       - Display the command to execute
+#       - or, execute the command
+#
+# @param string  $commandToExecute String containing the command to execute with parameters
+# @param boolean $jutDisplay       If true, echo the command, if false execute the command
+function vpgExecCommand {
+    local commandToExecute=$1
+    local justDisplay=$2
 
+    if [ "$justDisplay" = true ]; then
+        echo "$commandToExecute"
+    else
+        eval $commandToExecute
+    fi
+}
 
 # Check if this command exists
 #
