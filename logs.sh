@@ -16,21 +16,21 @@ COLOR_WHITE='\033[0;37m'
 #
 # @param string $1 Message to write
 function vpgError {
-    vpgLog 'error' "$1"
+    vpgLog 'ERROR' "$1"
 }
 
 # Write an info message
 #
 # @param string $1 Message to write
 function vpgInfo {
-    vpgLog 'info' "$1"
+    vpgLog 'INFO' "$1"
 }
 
 # Write a warning message
 #
 # @param string $1 Message to write
 function vpgWarning {
-    vpgLog 'warning' "$1"
+    vpgLog 'WARNING' "$1"
 }
 
 # This function write beautiful logs in stdout
