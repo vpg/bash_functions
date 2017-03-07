@@ -45,13 +45,13 @@ function vpgLog {
     # COLOUR according to log type
     local colour=$COLOR_NC
     case "$1" in
-            error)
+            ERROR)
                 colour=$COLOR_RED
                 ;;
-            info)
+            INFO)
                 colour=$COLOR_WHITE
                 ;;
-            warning)
+            WARNING)
                 colour=$COLOR_YELLOW
                 ;;
     esac
