@@ -49,7 +49,7 @@ function vpgLog {
                 colour=$COLOR_RED
                 ;;
             INFO)
-                colour=$COLOR_WHITE
+                colour=$COLOR_GREEN
                 ;;
             WARNING)
                 colour=$COLOR_YELLOW
