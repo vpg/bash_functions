@@ -56,6 +56,6 @@ function vpgLog {
                 ;;
     esac
 
-    echo -e `date +"%Y-%m-%d:%k:%M:%S"` "${colour}${messageType}${COLOR_NC} ${message}"
+    echo -e `date +"%Y-%m-%d:%k:%M:%S"` "${colour}${messageType} ${message}${COLOR_NC}"
     #
 }
