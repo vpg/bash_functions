@@ -7,7 +7,7 @@ source "$DIR/logs.sh";
 #
 # @return Returns an arra of indexes
 function vpgGetIndexes {
-    echo $indexJson | jq 'keys|.[]'
+    echo $indexJson | jq -r 'keys|.[]'
 }
 
 # Returning an array of the types of the index passed in param
@@ -21,7 +21,7 @@ function vpgGetTypes {
         exit 1;
     fi
 
-    echo $indexJson | jq ".[\"$index\"].mappings|keys|.[]" | grep -v "_default_"
+    echo $indexJson | jq -r ".[\"$index\"].mappings|keys|.[]" | grep -v "_default_"
 }
 
 # Set the elasticsearch server Reference
